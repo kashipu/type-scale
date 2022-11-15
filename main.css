@@ -145,6 +145,19 @@ html {
     border: 1px solid var(--black-lite-600);
 }
 
+
+.text-example {
+    margin: 3rem 0rem;
+}
+
+.text-example h1 {
+    font-weight: var(--medium);
+    line-height: 2;
+}
+.text-example p {
+    line-height: 1.5;
+}
+
 @media(max-width:1024px) {
     .header-table {
         background-color: rebeccapurple;
@@ -196,3 +209,4 @@ html {
 }
 /* Font-sizes title */
 }
+
