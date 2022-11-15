@@ -6,8 +6,6 @@
     /****** Base de texto *******/
     --font-base: 16px;
     --font-family: 'Roboto', sans-serif;
-    --font-size-tablet: 1rem;
-    --font-size-mobile: 1.5rem;
     /* Titles */
     --hero: 5.5rem; /* 88px */
     --title-xxl: 4.5rem; /* 72px */
@@ -49,9 +47,6 @@ html {
 .convensiones p {
     line-height: 2;
 }
-
-
-
 .container {
     max-width: 80%;
     min-width: 1200px;
@@ -158,28 +153,52 @@ html {
     line-height: 1.5;
 }
 
+@media(max-width:1440px) {
+    .header-table {
+        background-color: limegreen;
+    }
+    /* Font-sizes title */
+.title-hero {
+    font-size: calc(var(--hero) - var(--font-base));
+}
+.title-xxl {
+    font-size: calc(var(--title-xxl) - var(--font-size-desktop));
+}
+.title-xl {
+    font-size: calc(var(--title-xl) - var(--font-size-desktop));
+}
+.title-l {
+    font-size: calc(var(--title-l) - var(--font-size-desktop));
+}
+.title-m {
+    font-size: calc(var(--title-m) - var(--font-size-desktop));
+}
+.title-s {
+    font-size: calc(var(--title-s) - var(--font-size-desktop));
+}
+
 @media(max-width:1024px) {
     .header-table {
         background-color: rebeccapurple;
     }
     /* Font-sizes title */
 .title-hero {
-    font-size: calc(var(--hero) - var(--font-size-tablet) - .5rem);
+    font-size: calc(var(--hero) - var(--font-base) * 2);
 }
 .title-xxl {
-    font-size: calc(var(--title-xxl) - var(--font-size-tablet));
+    font-size: calc(var(--title-xxl) - var(--font-base));
 }
 .title-xl {
-    font-size: calc(var(--title-xl) - var(--font-size-tablet));
+    font-size: calc(var(--title-xl) - var(--font-base));
 }
 .title-l {
-    font-size: calc(var(--title-l) - var(--font-size-tablet));
+    font-size: calc(var(--title-l) - var(--font-base));
 }
 .title-m {
-    font-size: calc(var(--title-m) - var(--font-size-tablet));
+    font-size: calc(var(--title-m) - var(--font-base));
 }
 .title-s {
-    font-size: calc(var(--title-s) - .5rem);
+    font-size: calc(var(--title-s) - var(--font-base));
 }
 /* Font-sizes title */
 }
@@ -189,7 +208,7 @@ html {
     }
     /* Font-sizes title */
 .title-hero {
-    font-size: calc(var(--hero) - var(--font-size-mobile) - .5rem);
+    font-size: calc(var(--hero) - var(--font-base) * 3);
     
 }
 .title-xxl {
@@ -209,4 +228,3 @@ html {
 }
 /* Font-sizes title */
 }
-
